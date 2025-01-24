@@ -9,3 +9,10 @@ function comenzarCuentaRegresiva(){
 
     document.getElementById("cuentaRegrevisa").textContent = 30;
 }
+
+function ticTac() {
+    let tiempo =     document.getElementById("cuentaRegrevisa").textContent;
+
+    document.getElementById("cuentaRegrevisa").textContent = tiempo - 1;
+
+}
