@@ -4,7 +4,7 @@ let intervaloTiempo;
 
 /* Funciones */
 function comenzarCuentaRegresiva(){
-    tiempoTerminado = setTimeout(tiempoCumplido, 3000);
+    tiempoTerminado = setTimeout(tiempoCumplido, 30000);
     intervaloTiempo = setInterval(ticTac, 1000);
 
     document.getElementById("cuentaRegrevisa").textContent = 30;
@@ -37,8 +37,13 @@ function finalizado() {
     let respuesta5 = document.getElementById("respuesta5").value;
 
     let mensaje = fecha.toLocaleDateString("es-ES") + "\n" + "1. " + respuesta1 + "\n" +        
-                                                                   + respuesta2 + "\n" +      
-                                                                   + respuesta3 + "\n" +
-                                                                   + respuesta4 + "\n" +
-                                                                   + respuesta5 + "\n" ;
+                                                             "2. " + respuesta2 + "\n" +      
+                                                             "3. " + respuesta3 + "\n" +
+                                                             "4. " + respuesta4 + "\n" +
+                                                             "5. " + respuesta5;
+    alert(mensaje);
+}
+
+function volverAIntentar() {
+    location.reload();
 }
