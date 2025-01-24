@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Preguntas ❓ y responde rapido 🏃‍♂️</title>
 </head>
-<body>
-    
+<body onload="comenzarCuentaRegresiva()">
+    <h2>Responde a las preguntas lo mas rapido que puedas <span id="cuentaRegrevisa"></span></h2>
+
+    <p>¿Cual es la capital de Colombia?</p>
+    <input type="text" id="respuesta1">
+    <p>(5 * 5) + 5</p>
+    <input type="text" id="respuesta2">
+    <p>Simbolo quimico del agua</p>
+    <input type="text" id="respuesta3">
+    <p>Año de la pandemia por covid-19</p>
+    <input type="text" id="respuesta4">
+    <p>Vocalista de Bring me the Horizon</p>
+    <input type="text" id="respuesta5">
+    <br><br>
+
+    <button onclick="finalizado()">Termine</button>
+    <br><br>
+
+    <button onclick="volverAIntentar()">Volver a intentar</button>
+
+    <audio id="audioFinal" >
+        <source type="audio/mpeg" src="assets/audio/gameover.mp3">
+        Sonido no habilitado
+    </audio>
 </body>
 </html>
